@@ -2,9 +2,6 @@ import streamlit as st
 import joblib
 import numpy as np
 import os
-# Load the trained model
-import streamlit as st
-import joblib
 import requests
 import io
 
