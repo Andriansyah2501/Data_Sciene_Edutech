@@ -7,7 +7,7 @@ import os
 @st.cache_resource
 def load_model_and_scaler():
     try:
-        model = joblib.load(os.path.join("model", "rdd_model.joblib"))
+        model = joblib.load(os.path.join("model", "rdf_model.joblib"))
         scaler = joblib.load(os.path.join("model", "scaler.pkl"))
         return model, scaler
     except FileNotFoundError:
@@ -31,15 +31,52 @@ def predict_status(inputs):
         return None
 
 # Streamlit UI
-st.title("Simple Student Dropout Prediction")
+st.title("Student Dropout Prediction")
 
-# Single input for testing (adjust as needed)
-st.subheader("Enter a sample input")
-sample_input = st.number_input("Sample Feature (e.g., Application Order)", value=5)
+# Input fields
+st.subheader("Enter Student Details")
+Application_order = st.number_input("Application Order", min_value=0, max_value=9, value=9)
+Previous_qualification_grade = st.slider("Previous qualification (Grade)", min_value=0.0, max_value=200.0, value=44.0, step=0.1)
+Admission_grade = st.slider("Admission Grade", min_value=0.0, max_value=200.0, value=47.0, step=0.1)
+Age_at_enrollment = st.number_input("Age at enrollment", value=30)
+Curricular_units_1st_sem_credited = st.number_input("Curricular units 1st sem (credited)", value=23)
+Curricular_units_1st_sem_enrolled = st.number_input("Curricular units 1st sem (enrolled)", value=12)
+Curricular_units_1st_sem_evaluations = st.number_input("Curricular units 1st sem (evaluations)", value=24)
+Curricular_units_1st_sem_approved = st.number_input("Curricular units 1st sem (approved)", value=8)
+Curricular_units_1st_sem_grade = st.number_input("Curricular units 1st sem (grade)", value=6)
+Curricular_units_1st_sem_without_evaluations = st.number_input("Curricular units 1st sem (without evaluations)", value=22)
+Curricular_units_2nd_sem_credited = st.number_input("Curricular units 2nd sem (credited)", value=22)
+Curricular_units_2nd_sem_enrolled = st.number_input("Curricular units 2nd sem (enrolled)", value=11)
+Curricular_units_2nd_sem_evaluations = st.number_input("Curricular units 2nd sem (evaluations)", value=2)
+Curricular_units_2nd_sem_approved = st.number_input("Curricular units 2nd sem (approved)", value=20)
+Curricular_units_2nd_sem_grade = st.number_input("Curricular units 2nd sem (grade)", value=16)
+Curricular_units_2nd_sem_without_evaluations = st.number_input("Curricular units 2nd sem (without evaluations)", value=0)
+Unemployment_rate = st.number_input("Unemployment rate", value=1.0)
+Inflation_rate = st.number_input("Inflation rate", value=-1.5)
+GDP = st.number_input("GDP", value=0.4)
 
-# Dummy input data (19 features as per previous code)
-# Using sample_input for the first feature, others are placeholders
-input_data = [sample_input] + [0] * 18  # Adjust based on actual feature count
+# Collect inputs
+input_data = [
+    Application_order,
+    Previous_qualification_grade,
+    Admission_grade,
+    Age_at_enrollment,
+    Curricular_units_1st_sem_credited,
+    Curricular_units_1st_sem_enrolled,
+    Curricular_units_1st_sem_evaluations,
+    Curricular_units_1st_sem_approved,
+    Curricular_units_1st_sem_grade,
+    Curricular_units_1st_sem_without_evaluations,
+    Curricular_units_2nd_sem_credited,
+    Curricular_units_2nd_sem_enrolled,
+    Curricular_units_2nd_sem_evaluations,
+    Curricular_units_2nd_sem_approved,
+    Curricular_units_2nd_sem_grade,
+    Curricular_units_2nd_sem_without_evaluations,
+    Unemployment_rate,
+    Inflation_rate,
+    GDP
+]
 
 # Predict button
 if st.button("Predict"):
@@ -48,5 +85,4 @@ if st.button("Predict"):
         status_dict = {0: "Dropout", 1: "Enrolled", 2: "Graduate"}
         predicted_status_index = np.argmax(prediction, axis=1)[0]
         predicted_status = status_dict[predicted_status_index]
-        st.success(f"Predicted status: **{predicted_status}**")
-```
+        st.success(f"The model predicts that the student is likely to be: **{predicted_status}**")
