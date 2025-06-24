@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pandas==2.2.2
 numpy==1.26.4
 matplotlib==3.8.4
@@ -6,3 +7,13 @@ SQLAlchemy==2.0.30
 scikit-learn==1.4.2
 joblib==1.4.2
 streamlit==1.35.0
+=======
+streamlit==1.30.0
+pandas==2.2.2
+numpy==1.26.4
+joblib==1.4.2
+scikit-learn==1.5.1
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.22.0
+>>>>>>> 5d627223c3ba2e02e790a11dfa7cc758d3a62f34
