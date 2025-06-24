@@ -3,8 +3,26 @@ import joblib
 import numpy as np
 import os
 # Load the trained model
-model = joblib.load(os.path.join("model", "rdf_model.joblib"))
-scaler = joblib.load(os.path.join("model", "scaler.pkl"))
+import streamlit as st
+import joblib
+import requests
+import io
+
+@st.cache_resource  # caching untuk efisiensi
+def load_model_from_github(url):
+    response = requests.get(url)
+    response.raise_for_status()  # untuk memunculkan error jika URL salah
+    return joblib.load(io.BytesIO(response.content))
+
+# URL file dari GitHub
+model_url = "https://github.com/Andriansyah2501/Data_Sciene_Edutech/tree/main/Model/rdf_model.joblib"
+scaler_url = "https://github.com/Andriansyah2501/Data_Sciene_Edutech/tree/main/Model/scaler.pkl"
+
+# Load model dan scaler
+model = load_model_from_github(model_url)
+scaler = load_model_from_github(scaler_url)
+
+st.success("Model dan Scaler berhasil dimuat dari GitHub!")
 
 # Function to make predictions
 def predict_status(inputs):
