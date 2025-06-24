@@ -136,7 +136,9 @@ Berdasarkan temuan faktor-faktor risiko, institusi perlu memperkuat program duku
 
 
 Kredensial Metabase :
+
 Email : ian122110@gmail.com
-Pass : ZEb*rHt7*xw5g@v
+Pass : turu2501
+
 
 
