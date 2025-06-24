@@ -103,7 +103,7 @@ Dengan grafik yang menghubungkan berbagai faktor, seperti pemegang beasiswa atau
  
 ## Menjalankan Sistem Machine Learning
 Pada proyek ini, sebuah prototype telah disediakan untuk melakukan prediksi berdasarkan model yang telah dikembangkan. Untuk menjalankan prototype secara lokal, gunakan perintah berikut di terminal: streamlit run app.py.
-dapat diakses secara publik [link streamlit sistem machine learning](https://appsds2andriansyah.streamlit.app/)
+dapat diakses secara publik [link streamlit sistem machine learning](https://datascieneedutech-7rqjqbuzixoltqnxbxkvjo.streamlit.app//)
 
  
  
