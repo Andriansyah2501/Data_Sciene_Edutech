@@ -76,7 +76,7 @@ c. Menyiapkan Database (Supabase):
 Gunakan SQLAlchemy untuk mengirim dataset ke database dengan kode berikut:
 ```
 from sqlalchemy import create_engine
-URL = "postgresql://postgres.mcvvlagsohvgmcldxopr:hKoXydPQB9vPaF1P@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"
+URL = "postgresql://postgres.skwqbvmccluavdxflixa:kyq4kgX8cA8eH7Xy@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
 engine = create_engine(URL)
 df.to_sql('employee', engine)
 ```
