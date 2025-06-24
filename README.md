@@ -98,7 +98,7 @@ Melalui visualisasi yang menunjukkan persentase siswa yang termasuk dalam katego
 4. Identifikasi Faktor-Faktor yang Memengaruhi Dropout:
 Dengan grafik yang menghubungkan berbagai faktor, seperti pemegang beasiswa atau status keuangan, tim dapat lebih mudah mengidentifikasi faktor yang paling berpengaruh terhadap keputusan siswa untuk keluar dari institusi. Ini memberikan informasi yang berguna untuk mengambil langkah-langkah intervensi yang lebih tepat sasaran.
 
-![Business_Dashboard_1](https://github.com/Andriansyah2501/Data_Sciene_Edutech/blob/main/Ian2501_Dashboard_Metabase.jpg?raw=true)
+![Business_Dashboard_1](https://github.com/Andriansyah2501/Data_Sciene_Edutech/blob/main/Ian_2501_Dashboard_Metabase.jpg?raw=true)
 
  
 ## Menjalankan Sistem Machine Learning
