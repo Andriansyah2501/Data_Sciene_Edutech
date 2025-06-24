@@ -98,12 +98,12 @@ Melalui visualisasi yang menunjukkan persentase siswa yang termasuk dalam katego
 4. Identifikasi Faktor-Faktor yang Memengaruhi Dropout:
 Dengan grafik yang menghubungkan berbagai faktor, seperti pemegang beasiswa atau status keuangan, tim dapat lebih mudah mengidentifikasi faktor yang paling berpengaruh terhadap keputusan siswa untuk keluar dari institusi. Ini memberikan informasi yang berguna untuk mengambil langkah-langkah intervensi yang lebih tepat sasaran.
 
-![Business_Dashboard_1](https://github.com/Andriansyah2501/Data_Sciene_Edutech/blob/main/Ian2501_Dashboard_Metabase.jpg?raw=true)
+![Business_Dashboard_1](https://github.com/Andriansyah2501/Data_Sciene_Edutech/blob/main/Ian_2501_Dashboard_Metabase.jpg?raw=true)
 
  
 ## Menjalankan Sistem Machine Learning
 Pada proyek ini, sebuah prototype telah disediakan untuk melakukan prediksi berdasarkan model yang telah dikembangkan. Untuk menjalankan prototype secara lokal, gunakan perintah berikut di terminal: streamlit run app.py.
-dapat diakses secara publik [link streamlit sistem machine learning](https://datascieneedutech-7rqjqbuzixoltqnxbxkvjo.streamlit.app//)
+dapat diakses secara publik [link streamlit sistem machine learning](https://datascieneedutech-t6ryvwda6ynvapplzdknxd7.streamlit.app/)
 
  
  
