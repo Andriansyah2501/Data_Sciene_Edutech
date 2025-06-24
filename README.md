@@ -134,3 +134,9 @@ Melakukan evaluasi terhadap program studi dengan tingkat dropout yang tinggi dan
 3. Penguatan Program Dukungan Akademik dan Psikologis:
 Berdasarkan temuan faktor-faktor risiko, institusi perlu memperkuat program dukungan akademik dan psikologis. Hal ini bisa meliputi peningkatan akses untuk bimbingan belajar, penyediaan sesi konseling, serta dukungan kesehatan mental bagi siswa yang teridentifikasi rentan.
 
+
+Kredensial Metabase :
+Email : ian122110@gmail.com
+Pass : ZEb*rHt7*xw5g@v
+
+
