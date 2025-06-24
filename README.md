@@ -20,7 +20,7 @@ Beberapa permasalahan yang perlu diidentifikasi dan diselesaikan adalah:
 
  
 ### Persiapan
-Sumber Data: [Link Sumber Data]
+Sumber Data: [Link Sumber Data]https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/README.md
  
 Setup Lingkungan:
 a. Menyiapkan Environment Conda:
@@ -98,13 +98,12 @@ Melalui visualisasi yang menunjukkan persentase siswa yang termasuk dalam katego
 4. Identifikasi Faktor-Faktor yang Memengaruhi Dropout:
 Dengan grafik yang menghubungkan berbagai faktor, seperti pemegang beasiswa atau status keuangan, tim dapat lebih mudah mengidentifikasi faktor yang paling berpengaruh terhadap keputusan siswa untuk keluar dari institusi. Ini memberikan informasi yang berguna untuk mengambil langkah-langkah intervensi yang lebih tepat sasaran.
 
-![Business_Dashboard_1]
-![Business_Dashboard_2]
-![Business_Dashboard_3]
+![Business_Dashboard_1](https://github.com/Andriansyah2501/Data_Sciene_Edutech/blob/main/Ian2501_Dashboard_Metabase.jpg?raw=true)
+
  
 ## Menjalankan Sistem Machine Learning
 Pada proyek ini, sebuah prototype telah disediakan untuk melakukan prediksi berdasarkan model yang telah dikembangkan. Untuk menjalankan prototype secara lokal, gunakan perintah berikut di terminal: streamlit run app.py.
-dapat diakses secara publik [link streamlit sistem machine learning](/)
+dapat diakses secara publik [link streamlit sistem machine learning](https://appsds2andriansyah.streamlit.app/)
 
  
  
@@ -115,11 +114,9 @@ Berdasarkan analisis data yang ditampilkan pada dashboard terkait status siswa, 
 
 2. Biaya Pendidikan: Berdasarkan grafik "Tuition Fees by Dropout", siswa yang membayar biaya pendidikan (dengan status "Yes" pada biaya) lebih cenderung untuk mengalami dropout. Hal ini mungkin mengindikasikan bahwa masalah finansial berkontribusi terhadap keputusan untuk berhenti.
 
-3. Penerima Beasiswa: Siswa yang tidak menerima beasiswa (status "No" pada Scholarship Holder) cenderung memiliki tingkat dropout yang lebih tinggi, seperti yang terlihat pada grafik "Scholarship Holder by Dropout". Ini menunjukkan bahwa dukungan keuangan melalui beasiswa dapat menjadi faktor pendorong untuk menyelesaikan pendidikan.
-
-4. Status Pernikahan: Grafik "Marital Status" menunjukkan bahwa siswa yang belum menikah (single) lebih sering mengalami dropout dibandingkan dengan mereka yang sudah menikah. Hal ini mungkin terkait dengan tanggung jawab atau stabilitas yang berbeda antara siswa dengan status pernikahan yang berbeda.
-
-5. Status Keuangan (Debitur): Siswa yang memiliki status debitur (grafik "Debtor by Dropout") lebih cenderung untuk mengalami dropout. Ini menunjukkan bahwa masalah keuangan atau keterlambatan pembayaran dapat berkontribusi pada keputusan siswa untuk keluar.
+3. Penerima Beasiswa: Siswa yang tidak menerima beasiswa (status "No" pada Scholarship Holder) cenderung memiliki tingkat dropout yang lebih tinggi, seperti yang terlihat pada grafik "Scholarship Holder by Dropout". Ini menunjukkan bahwa dukungan keuangan melalui beasiswa dapat menjadi faktor pendorong untuk menyelesaikan pendidikan
+  
+4. Status Keuangan (Debitur): Siswa yang memiliki status debitur (grafik "Debtor by Dropout") lebih cenderung untuk mengalami dropout. Ini menunjukkan bahwa masalah keuangan atau keterlambatan pembayaran dapat berkontribusi pada keputusan siswa untuk keluar.
 
 Dengan menggunakan dashboard ini, tim institusi dapat mengambil langkah-langkah strategis berdasarkan analisis yang lebih mendalam terhadap faktor-faktor yang mempengaruhi tingkat dropout siswa. Berdasarkan informasi ini, institusi dapat:
 1. Fokus pada kelompok usia tertentu atau siswa yang terhambat secara finansial untuk mengurangi tingkat dropout.
