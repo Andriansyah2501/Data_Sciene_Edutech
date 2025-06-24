@@ -1,4 +1,4 @@
-# Data_Sciene_Edutech - Andrian Syah
+# Data Sciene Edutech - Andrian Syah
 
 # Proyek Akhir: Menyelesaikan Permasalahan Institusi Pendidikan
  
